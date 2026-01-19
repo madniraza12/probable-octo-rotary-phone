@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Todo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>📚 My School Todo</h1>
+
+    <!-- Clock -->
+    <div id="clock">00:00:00</div>
+
+    <!-- Todo App -->
+    <div class="todo-container">
+        <div class="input-box">
+            <input type="text" id="taskInput" placeholder="✏️ Write your task...">
+            <button onclick="addTask()">Add</button>
+        </div>
+
+        <ul id="taskList"></ul>
+    </div>
+
+    <script src="script.mjs"></script>
+</body>
+</html>
