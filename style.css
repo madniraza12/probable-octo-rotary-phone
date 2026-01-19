@@ -1,0 +1,557 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Background – soft & calm */
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f4f6fb, #eef2ff);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #1f2937;
+}
+
+/* Heading */
+h1 {
+    margin-top: 30px;
+    font-size: 28px;
+    font-weight: 600;
+    color: #374151;
+}
+
+/* Clock */
+#clock {
+    margin: 16px 0 24px;
+    padding: 12px 26px;
+    font-size: 22px;
+    font-weight: 500;
+    background: #ffffff;
+    border-radius: 14px;
+    color: #4f46e5;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+/* Main card */
+.todo-container {
+    width: 92%;
+    max-width: 420px;
+    background: #ffffff;
+    padding: 24px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* Input row */
+.input-box {
+    display: flex;
+    gap: 12px;
+}
+
+/* Input */
+input {
+    flex: 1;
+    padding: 12px 14px;
+    border-radius: 12px;
+    border: 1.5px solid #e5e7eb;
+    font-size: 15px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #6366f1;
+}
+
+/* Button */
+button {
+    padding: 12px 18px;
+    border-radius: 12px;
+    border: none;
+    background: #6366f1;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+button:hover {
+    background: #4f46e5;
+}
+
+/* Task list */
+ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+/* Task item */
+li {
+    background: #f9fafb;
+    padding: 14px 16px;
+    border-radius: 14px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 5px solid #6366f1;
+}
+
+/* Done task */
+.done {
+    text-decoration: line-through;
+    color: #9ca3af;
+}
+
+/* Delete */
+.delete-btn {
+    background: #ef4444;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background: #dc2626;
+}
+
+/* Task animation */
+.task {
+    animation: slideIn 0.3s ease;
+}
+
+/* Buttons container */
+.btn-box {
+    display: flex;
+    gap: 6px;
+}
+
+/* Edit button */
+.edit-btn {
+    background: #fbbf24;
+    border: none;
+    padding: 6px 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.edit-btn:hover {
+    background: #f59e0b;
+}
+
+/* Delete animation */
+.fade-out {
+    animation: fadeOut 0.3s ease forwards;
+}
+
+/* Animations */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+}
+/* Task animation */
+.task {
+    animation: slideIn 0.3s ease;
+}
+
+/* Buttons container */
+.btn-box {
+    display: flex;
+    gap: 6px;
+}
+
+/* Edit button */
+.edit-btn {
+    background: #fbbf24;
+    border: none;
+    padding: 6px 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.edit-btn:hover {
+    background: #f59e0b;
+}
+
+/* Delete animation */
+.fade-out {
+    animation: fadeOut 0.3s ease forwards;
+}
+
+/* Animations */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+}
+/* Task animation */
+.task {
+    animation: slideIn 0.3s ease;
+}
+
+/* Buttons container */
+.btn-box {
+    display: flex;
+    gap: 6px;
+}
+
+/* Edit button */
+.edit-btn {
+    background: #fbbf24;
+    border: none;
+    padding: 6px 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.edit-btn:hover {
+    background: #f59e0b;
+}
+
+/* Delete animation */
+.fade-out {
+    animation: fadeOut 0.3s ease forwards;
+}
+
+/* Animations */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+}
+/* Task animation */
+.task {
+    animation: slideIn 0.3s ease;
+}
+
+/* Buttons container */
+.btn-box {
+    display: flex;
+    gap: 6px;
+}
+
+/* Edit button */
+.edit-btn {
+    background: #fbbf24;
+    border: none;
+    padding: 6px 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.edit-btn:hover {
+    background: #f59e0b;
+}
+
+/* Delete animation */
+.fade-out {
+    animation: fadeOut 0.3s ease forwards;
+}
+
+/* Animations */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+}
+/* Task animation */
+.task {
+    animation: slideIn 0.3s ease;
+}
+
+/* Buttons container */
+.btn-box {
+    display: flex;
+    gap: 6px;
+}
+
+/* Edit button */
+.edit-btn {
+    background: #fbbf24;
+    border: none;
+    padding: 6px 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.edit-btn:hover {
+    background: #f59e0b;
+}
+
+/* Delete animation */
+.fade-out {
+    animation: fadeOut 0.3s ease forwards;
+}
+
+/* Animations */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+}
+/* Task animation */
+.task {
+    animation: slideIn 0.3s ease;
+}
+
+/* Buttons container */
+.btn-box {
+    display: flex;
+    gap: 6px;
+}
+
+/* Edit button */
+.edit-btn {
+    background: #fbbf24;
+    border: none;
+    padding: 6px 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.edit-btn:hover {
+    background: #f59e0b;
+}
+
+/* Delete animation */
+.fade-out {
+    animation: fadeOut 0.3s ease forwards;
+}
+
+/* Animations */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+}
+
+/* Task animation */
+.task {
+    animation: slideIn 0.3s ease;
+}
+
+/* Buttons container */
+.btn-box {
+    display: flex;
+    gap: 6px;
+}
+
+/* Edit button */
+.edit-btn {
+    background: #fbbf24;
+    border: none;
+    padding: 6px 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.edit-btn:hover {
+    background: #f59e0b;
+}
+
+/* Delete animation */
+.fade-out {
+    animation: fadeOut 0.3s ease forwards;
+}
+
+/* Animations */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+}
+/* Task animation */
+.task {
+    animation: slideIn 0.3s ease;
+}   
+/* Buttons container */
+.btn-box {
+    display: flex;
+    gap: 6px;
+}
+/* Edit button */
+.edit-btn {
+    background: #fbbf24;
+    border: none;
+    padding: 6px 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.edit-btn:hover {
+    background: #f59e0b;
+}
+/* Delete animation */
+.fade-out {
+    animation: fadeOut 0.3s ease forwards;
+}
+/* Animations */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+}
+/* Task animation */
+.task {
+    animation: slideIn 0.3s ease;
+}
+/* Buttons container */
+.btn-box {
+    display: flex;
+    gap: 6px;
+}
+/* Edit button */
+.edit-btn {
+    background: #fbbf24;
+    border: none;
+    padding: 6px 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.edit-btn:hover {
+    background: #f59e0b;
+}
+/* Delete animation */
+.fade-out {
+    animation: fadeOut 0.3s ease forwards;
+}
+/* Animations */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+}
+/* Task animation */
+.task {
+    animation: slideIn 0.3s ease;
+}
+/* Buttons container */
+.btn-box {
+    display: flex;
+    gap: 6px;
+}
+/* Edit button */
+.edit-btn {
+    background: #fbbf24;
+    border: none;
+    padding: 6px 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.edit-btn:hover {
+    background: #f59e0b;
+}
+/* Delete animation */
+.fade-out {
+    animation: fadeOut 0.3s ease forwards;
+}
